@@ -1,0 +1,18 @@
+{
+  "name": "Tel Link Manager",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "ブラウザのページ上から電話番号を探して、リンクとして表示するための拡張機能です。",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts":[{
+    "matches": ["http://*/*", "https://*/*", "file:///*"],
+    "all_frames": true,
+    "js":[
+      "contents.js"
+    ]
+  }]
+}
